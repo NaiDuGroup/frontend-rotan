@@ -20,6 +20,10 @@ const routes: Routes = [
         path: 'protective',
         loadChildren: () => import('../client/protective-footwear/protective-footwear.module').then((m) => m.ProtectiveFootwearModule),
       },
+      {
+        path: 'medical',
+        loadChildren: () => import('../client/medical-footwear/medical-footwear.module').then((m) => m.MedicalFootwearModule),
+      }
     ]
   }
 ];
