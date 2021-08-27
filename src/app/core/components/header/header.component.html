@@ -1,0 +1,18 @@
+<div class="header">
+  <img class="logo" src="../../../../assets/icons/rotan_logo-white.png">
+
+  <div class="header-actions">
+    <ng-container *ngFor="let menuItem of headerActions">
+      <div class="header-actions__item" [routerLink]="menuItem.routerLink" routerLinkActive="active">
+        <div class="header-actions__item-title">
+          {{ menuItem.title }}
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+<div>
+  <router-outlet></router-outlet>
+</div>

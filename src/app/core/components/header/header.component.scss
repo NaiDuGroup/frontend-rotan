@@ -1,0 +1,32 @@
+@import '../../../../styles/abstracts';
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: $primary;
+}
+
+.logo {
+    height: 70px;
+    cursor: pointer;
+}
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid;
+        border-radius: 2px;
+
+        &.active {
+            color: white;
+        }
+    }
+}
